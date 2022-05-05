@@ -21,4 +21,16 @@ const getCharacters = async () => {
   console.log(characters)
   return characters
 }
+// passing in a character and using our client to call a put request
+// this will either add a new character to the database or 
+// update an existing character depending on the id
+const addOrUpdateCharacter = async (character) => {
+  const params = {
+    TABLE_NAME,
+    ITEM: character
+  }
+  return await dynamoClient.put(params).promise();
+}
 getCharacters();
+
+
