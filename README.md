@@ -6,3 +6,10 @@ This is a small project to help me learn and practice making an API. I will be u
 - Node
 - Express
 - DynamoDB
+
+## How to run this program
+- To be updated
+
+
+## Thoughts and Reflections
+- Stay tuned
